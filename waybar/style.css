@@ -1,5 +1,9 @@
-@define-color bg    #1a1b26; 
-@define-color fg    #a9b1d6; 
+@define-color bg    #3b4252; 
+@define-color mg    #434c5e; 
+@define-color fg    #d8dee9; 
+@define-color oldb  #1a1b26; 
+@define-color oldm  #2d2e40;
+@define-color oldf  #a9b1d6; 
 @define-color blk   #32344a; 
 @define-color red   #f7768e; 
 @define-color grn   #9ece6a; 
@@ -23,24 +27,28 @@ window#waybar {
 
 #workspaces button {
     padding: 0 6px;
-    color: @cyn;
-    background: transparent;
+    color: @fg;
+    background: transparent; 
     border-bottom: 3px solid @bg;
 }
+
 #workspaces button.active {
-    color: @cyn;
-    border-bottom: 3px solid @mag;
-}
-#workspaces button.empty {
     color: @white;
+    background: @mg;
+    border-bottom: 3px solid @mg;
 }
+
+#workspaces button.empty {
+    color: @fg;
+}
+
 #workspaces button.empty.active {
-    color: @cyn;
-    border-bottom: 3px solid @mag;
+    color: @white;
+    border-bottom: 3px solid @mg;
 }
 
 #workspaces button.urgent {
-    background-color: @red;
+    background-color: @fg;
 }
 
 button:hover {
@@ -66,32 +74,32 @@ button:hover {
 }
 
 #clock {
-    color: @white;
+    color: @fg;
 }
 
 #battery {
-    color: @blu;
-    border-bottom: 4px solid @blu;
+    color: @fg;
+    border-bottom: 4px solid @fg;
 }
 
 #disk {
-    color: @red;
-    border-bottom: 4px solid @red;
+    color: @fg;
+    border-bottom: 4px solid @fg;
 }
 
 #memory {
-    color: @cyn;
-    border-bottom: 4px solid @cyn;
+    color: @fg;
+    border-bottom: 4px solid @fg;
 }
 
 #cpu {
-    color: @mag;
-    border-bottom: 4px solid @mag;
+    color: @fg;
+    border-bottom: 4px solid @fg;
 }
 
 #network {
-    color: @grn;
-    border-bottom: 4px solid @grn;
+    color: @fg;
+    border-bottom: 4px solid @fg;
 }
 
 #network.disconnected {
@@ -103,7 +111,7 @@ button:hover {
 }
 
 #pulseaudio {
-    color: @cyn;
-    border-bottom: 4px solid @cyn;
+    color: @fg;
+    border-bottom: 4px solid @fg;
 }
 

@@ -1,34 +1,31 @@
 // -*- mode: jsonc -*-
 {
     "layer": "top", 
-    "position": "top", 
+    "position": "bottom", 
     "height": 30, 
     "spacing": 4, 
 
     // Choose the order of the modules
     "modules-left": [
-        "hyprland/workspaces",
-        "custom/sep",
-        "hyprland/window",
-        "custom/sep"
+        "hyprland/workspaces"
     ],
+    
     "modules-center": [
-        "clock"
+        "hyprland/window"
    ],
 
     "modules-right": [
         "custom/sep",
-        "network",
-        "custom/sep",
-	"pulseaudio",
-	"custom/sep",
         "cpu",
         "custom/sep",
         "memory",
         "custom/sep",
-        "disk",
+	"pulseaudio",
+	"custom/sep",
+        "network",
         "custom/sep",
-        "tray"
+        "clock",
+	"custom/sep"
     ],
 
     // Modules configuration
@@ -54,8 +51,8 @@
         // }
     },
     "clock": {
-	"format": "{:%H:%M | %d %b}",
-        "format-alt": "{:%Y-%m-%d}"
+	"format": "{:%H:%M}",
+        "format-alt": "{:%d %b %Y}"
     },
     "cpu": {
         "format": "CPU: {usage}%",
